@@ -4,91 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>High Tech Software House</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-    <!-- header section -->
- <header>
-  <div class="navbar container">
-    <h1 class="logo">High Tech Software House</h1>
-    <nav id="navMenu">
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  </div>
-</header>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <h1>High Tech Software House</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h2>Our Professional Services</h2>
-      <p>Solutions tailored to your business needs.</p>
-      <a href="#contact" class="btn">Get a Quote</a>
-    </div>
+    <h2>Our Professional Services</h2>
+    <p>Tailored software solutions for your business success.</p>
+    <a href="#contact" class="btn">Get a Quote</a>
   </section>
 
   <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <h2>What We Offer</h2>
-      <div class="service-cards">
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Modern and responsive websites built for performance.</p>
-          <a href="#" class="btn-sm">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Mobile App Development</h3>
-          <p>Cross-platform mobile apps tailored to your users.</p>
-          <a href="#" class="btn-sm">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Digital Marketing</h3>
-          <p>Grow your brand with expert digital marketing strategies.</p>
-          <a href="#" class="btn-sm">Learn More</a>
-        </div>
+  <section id="services" class="services">
+    <h2>What We Offer</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-code fa-3x"></i>
+        <h3>Web Development</h3>
+        <p>Responsive and modern websites tailored to your brand.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-mobile-alt fa-3x"></i>
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform mobile apps for Android and iOS.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-bullhorn fa-3x"></i>
+        <h3>Digital Marketing</h3>
+        <p>Boost your reach with SEO, ads, and social media strategies.</p>
+        <a href="#" class="btn">Learn More</a>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
   <section class="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>"High Tech transformed our online presence. We saw instant results!"</p>
-        <span>- Client A</span>
-      </div>
-      <div class="testimonial">
-        <p>"Excellent service and support throughout the development process."</p>
-        <span>- Client B</span>
-      </div>
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>“Great team and support. They delivered our website on time!”</p>
+      <h4>- Sarah Ahmed</h4>
+    </div>
+    <div class="testimonial">
+      <p>“The mobile app works flawlessly. We’re very happy with the result.”</p>
+      <h4>- Ali Khan</h4>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-        <p class="success-message" id="successMessage"></p>
-      </form>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+      <p id="formMsg"></p>
+    </form>
   </section>
 
-  <!-- Scroll to Top -->
-  <button id="scrollToTopBtn" title="Go to top">↑</button>
+  <!-- Scroll to Top Button -->
+  <button id="topBtn">↑</button>
 
+  <!-- JS File -->
   <script src="script.js"></script>
 </body>
 </html>
